@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="yamlarg", # Replace with your own username
-    version="0.0.4",
+    version="0.0.6",
     author="John Burt",
     author_email="",
     description="Easy YAML arguments for python scripts.",
