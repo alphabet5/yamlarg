@@ -1,0 +1,17 @@
+---
+string:
+  help: Example string parameter.
+  type: str
+  default: 'default string'
+bool_false:
+  help: Example boolean with a default of false.
+  default: False
+  action: 'store_true'
+bool_true:
+  help: Example boolean with a default of true
+  default: True
+  action: 'store_false'
+list:
+  help: List of n number of unnamed arguments.
+  default: ''
+  nargs: '*'
