@@ -1,4 +1,4 @@
-# yarg
+# yamlarg
  Easy YAML arguments for python scripts.
 
 ## Usage
