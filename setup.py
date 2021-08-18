@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="yamlarg", # Replace with your own username
-    version="0.0.6",
+    name="yamlarg",
+    version="0.0.8",
     author="John Burt",
     author_email="",
     description="Easy YAML arguments for python scripts.",

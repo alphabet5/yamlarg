@@ -1,7 +1,8 @@
 
 
-def parse(arg_file):
+def parse(arg_file, description=None):
     """
+    :param description: string
     :param arg_file: string
     :returns: dict
 
@@ -34,7 +35,7 @@ def parse(arg_file):
     import yaml
     with open(arg_file, 'r') as y:
         data = yaml.load(y, Loader=yaml.FullLoader)
-        parser = argparse.ArgumentParser()
+        parser = argparse.ArgumentParser(description=description, formatter_class=argparse.RawTextHelpFormatter)
         for argument, parameters in data.items():
             if 'type' in parameters.keys():
                 parameters['type'] = locate(parameters['type'])
